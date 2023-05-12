@@ -29,3 +29,35 @@
       </div>
   </form>
 </div>
+
+
+{{--  $.ajax({
+              url:"{{ route('product.add') }}",
+              debugger
+              method:'POST',
+              data:{name:name,price:price},
+              success:function(res){
+
+              },
+              error:function(err){
+                let error = err.responseJSON;
+                $.each(error.errors,function(index,value){
+                  $('.errMsgContainer').append('<span class="text-danger">'+value+'</span>'+'<br>');
+                });
+
+              }
+            });  --}}
+
+{{--  
+            $.ajax({
+              url:"{{ route('product.add') }}",
+              method: 'POST',
+              data: { name: name, price: price },
+              success: function(res) {
+                //console.log(data);
+                  // handle success response
+              },
+              error: function(err) {
+                  // handle error response
+              }
+          });  --}}

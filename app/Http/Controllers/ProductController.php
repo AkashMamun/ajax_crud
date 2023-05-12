@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Product;
+use App\Product;
 
 class ProductController extends Controller
 {
@@ -38,7 +38,7 @@ class ProductController extends Controller
         );
 
         $product = new Product();
-        dd($product);
+        // dd($product);
 
         $product->name = $request->name;
         $product->price = $request->price;
